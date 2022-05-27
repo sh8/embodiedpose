@@ -53,23 +53,6 @@
                     In Submission to NeurIPS 2022
                 </li>
             </ul>
-            <ul class="authors links">
-                <!-- <li>
-                    <a href="https://arxiv.org/pdf/2006.07364.pdf" target="_blank">
-                        <button class="btn"><i class="fa fa-file-pdf"></i> Paper</button>
-                    </a>
-                </li> -->
-                <!-- <li>
-                    <a href="https://youtu.be/XuzH1u78o1Y" target="_blank">
-                        <button class="btn"><i class="fab fa-youtube"></i> Video</button>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/Khrylx/RFC" target="_blank">
-                        <button class="btn"><i class="fab fa-github"></i> Code</button>
-                    </a>
-                </li> -->
-            </ul>
         </div>
     </div>
 
@@ -79,17 +62,28 @@
             Abstract
         </h2>
         <p>
-            We propose embodied scene-aware human pose estimation where we estimate 3D poses based on a simulated agent's
-            proprioception and scene awareness, along with external third-person observations. Unlike prior methods that often
-            resort to multistage optimization, non-causal inference, and complex contact modeling to estimate human pose and human
-            scene interactions, our method is one stage, causal, and recovers global 3D human poses in a simulated environment.
-            Since 2D third-person observations are coupled with the camera pose, we propose to disentangle the camera pose and use a
-            multi-step projection gradient defined in the global coordinate frame as the movement cue for our embodied agent.
-            Leveraging a physics simulation and prescanned scenes (e.g., 3D mesh), we simulate our agent in everyday environments
-            (libraries, offices, bedrooms, etc.) and equip our agent with environmental sensors to intelligently navigate and
-            interact with scene geometries. Our method also relies only on 2D keypoints and can be trained on synthetic datasets
-            derived from popular human motion databases. To evaluate, we use the popular H36M and PROX datasets and, for the first
-            time, achieve a success rate of 96.7% on the challenging PROX dataset without ever using PROX motion sequences for
+            We propose embodied scene-aware human pose estimation where we estimate 3D poses based on a simulated
+            agent's
+            proprioception and scene awareness, along with external third-person observations. Unlike prior methods that
+            often
+            resort to multistage optimization, non-causal inference, and complex contact modeling to estimate human pose
+            and human
+            scene interactions, our method is one stage, causal, and recovers global 3D human poses in a simulated
+            environment.
+            Since 2D third-person observations are coupled with the camera pose, we propose to disentangle the camera
+            pose and use a
+            multi-step projection gradient defined in the global coordinate frame as the movement cue for our embodied
+            agent.
+            Leveraging a physics simulation and prescanned scenes (e.g., 3D mesh), we simulate our agent in everyday
+            environments
+            (libraries, offices, bedrooms, etc.) and equip our agent with environmental sensors to intelligently
+            navigate and
+            interact with scene geometries. Our method also relies only on 2D keypoints and can be trained on synthetic
+            datasets
+            derived from popular human motion databases. To evaluate, we use the popular H36M and PROX datasets and, for
+            the first
+            time, achieve a success rate of 96.7% on the challenging PROX dataset without ever using PROX motion
+            sequences for
             training.
         </p>
 
@@ -104,54 +98,99 @@
         </div>
 
 
+        <h2>
+            Full Evaluation on the Prox Dataset
+        </h2>
+        <table
+            style="width:100%;border:0px;border-spacing:5px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;padding-bottom:20px;">
+            <tbody>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/BasementSittingBooth_00142_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/BasementSittingBooth_00145_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/BasementSittingBooth_03403_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/BasementSittingBooth_03452_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH112_00034_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH112_00150_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH112_00151_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH112_00157_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH112_00169_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH112_03515_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH11_00034_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH11_00150_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH11_00151_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH11_00153_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH11_00157_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH11_00169_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH11_03515_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH16_00157_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH16_03301_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH1Library_00034_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH1Library_00145_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH1Library_03301_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH8_00034_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH8_00168_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/MPH8_03301_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N0SittingBooth_00162_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N0SittingBooth_00169_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N0SittingBooth_00169_02.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N0SittingBooth_03301_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N0SittingBooth_03403_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N0Sofa_00034_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N0Sofa_00034_02.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N0Sofa_00141_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N0Sofa_00145_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N0Sofa_03403_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3Library_00157_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3Library_00157_02.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3Library_03301_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3Library_03301_02.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3Library_03375_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3Library_03375_02.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3Library_03403_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3Library_03403_02.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3Office_00034_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3Office_00139_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3Office_00139_02.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3Office_00150_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3Office_00153_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3Office_00159_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3Office_03301_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3OpenArea_00157_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3OpenArea_00157_02.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3OpenArea_00158_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3OpenArea_00158_02.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3OpenArea_03301_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/N3OpenArea_03403_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/Werkraum_03301_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/Werkraum_03403_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+<tr class="block_videos">         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/Werkraum_03516_01.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>         <td>             <video width=100% height=auto muted autoplay loop controls>                 <source src="videos/Werkraum_03516_02.mp4#t=0.001" type="video/mp4">                 Your browser does not support the video tag.             </video>         </td>     </tr>
+
+            </tbody>
+        </table>
+
+
+        <h2>
+            Evaluation on the H36M Dataset
+        </h2>
         <table
             style="width:100%;border:0px;border-spacing:5px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;padding-bottom:20px;">
             <tbody>
                 <tr class="block_videos">
-                    <td>
-                        <video width=100% height=auto muted autoplay loop controls>
-                            <source src="videos/BasementSittingBooth_00142_01.mp4#t=0.001" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </td>
-                    <td>
-                        <video width=100% height=auto muted autoplay loop controls>
-                            <source src="videos/BasementSittingBooth_00142_01.mp4#t=0.001" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </td>
-                    <td>
-                        <video width=100% height=auto muted autoplay loop controls>
-                            <source src="videos/BasementSittingBooth_00142_01.mp4#t=0.001" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </td>
-                    <td>
-                        <video width=50% height=auto muted autoplay loop controls>
-                            <source src="videos/BasementSittingBooth_00142_01.mp4#t=0.001" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </td>
-        
+                    <td> <video width=100% height=auto muted autoplay loop controls>
+                            <source src="videos/S11-Eating 1.60457274.mp4#t=0.001" type="video/mp4"> Your
+                            browser does not
+                            support the video tag.
+                        </video> </td>
+                    <td> <video width=100% height=auto muted autoplay loop controls>
+                            <source src="videos/S11-Phoning 3.60457274.mp4#t=0.001" type="video/mp4"> Your
+                            browser does not
+                            support the video tag.
+                        </video> </td>
                 </tr>
+
                 <tr class="block_videos">
-                    <td>
-                        <video width=100% height=auto muted autoplay loop playsinline>
-                            <source src="data/rfc_teaser3.mp4#t=0.001" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </td>
-                    <td>
-                        <video width=100% height=auto muted autoplay loop playsinline>
-                            <source src="data/rfc_teaser4.mp4#t=0.001" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </td>
+                    <td> <video width=100% height=auto muted autoplay loop controls>
+                            <source src="videos/S11-Purchases 1.58860488.mp4#t=0.001" type="video/mp4"> Your
+                            browser does not
+                            support the video tag.
+                        </video> </td>
+                    <td> <video width=100% height=auto muted autoplay loop controls>
+                            <source src="videos/S11-SittingDown.54138969.mp4#t=0.001" type="video/mp4"> Your
+                            browser does not
+                            support the video tag.
+                        </video> </td>
+                    
                 </tr>
+
+                <tr class="block_videos">
+                    <td> <video width=100% height=auto muted autoplay loop controls>
+                            <source src="videos/S11-WalkDog.60457274-S11.mp4#t=0.001" type="video/mp4"> Your
+                            browser does not
+                            support the video tag.
+                        </video> </td>
+                    <td> <video width=100% height=auto muted autoplay loop controls>
+                            <source src="videos/S11-Posing 1.55011271.mp4#t=0.001" type="video/mp4"> Your
+                            browser does not
+                            support the video tag.
+                        </video> </td>
+                </tr>
+            </tbody>
+
         </table>
 
-      
-    </pre>
+     
+
+        </table>
 
     </div>
 </body>
