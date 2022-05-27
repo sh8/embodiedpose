@@ -1,1 +1,159 @@
-NeurIPS 2022 Submission. 
+<!DOCTYPE html>
+<html lang="" xml:lang="" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KZEKLLQP31');
+    </script>
+
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>
+        Embodied Scene-aware Human Pose Estimation
+    </title>
+    <meta content="embodiedpose" property="og:title" />
+    <meta
+        content="We propose embodied scene-aware human pose estimation where we estimate 3D poses based on a simulated agent's proprioception and scene awareness, along with external third-person observations. Unlike prior methods that often resort to multistage optimization, non-causal inference, and complex contact modeling to estimate human pose and human scene interactions, our method is one stage, causal, and recovers global 3D human poses in a simulated environment. Since 2D third-person observations are coupled with the camera pose, we propose to disentangle the camera pose and use a multi-step projection gradient defined in the global coordinate frame as the movement cue for our embodied agent. Leveraging a physics simulation and prescanned scenes (e.g., 3D mesh), we simulate our agent in everyday environments (libraries, offices, bedrooms, etc.) and equip our agent with environmental sensors to intelligently navigate and interact with scene geometries. Our method also relies only on 2D keypoints and can be trained on synthetic datasets derived from popular human motion databases. To evaluate, we use the popular H36M and PROX datasets and, for the first time, achieve a success rate of 96.7% on the challenging PROX dataset without ever using PROX motion sequences for training."
+        name="description" property="og:description" />
+    <meta name="keywords" content="Human Pose Estimation, Embodied AI">
+
+    <link rel="stylesheet" href="assets/css/project_stylesheet.css">
+    <link href="../data/misc/favicon.ico" rel="shortcut icon">
+    <link href="../data/misc/favicon_apple.ico" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="assets/academicons/css/academicons.min.css">
+
+    <script defer src="assets/js/fontawesome.all.min.js"></script>
+
+</head>
+
+<body>
+    <div class="n-header">
+    </div>
+    <div class="n-title">
+        <h1>
+            Embodied Scene-aware Human Pose Estimation
+        </h1>
+    </div>
+    <div class="n-byline">
+        <div class="byline">
+            <ul class="authors">
+                <li>
+                    Anonymous authors
+                </li>
+            </ul>
+            <ul class="authors affiliations">
+                <li>
+                    In Submission to NeurIPS 2022
+                </li>
+            </ul>
+            <ul class="authors links">
+                <!-- <li>
+                    <a href="https://arxiv.org/pdf/2006.07364.pdf" target="_blank">
+                        <button class="btn"><i class="fa fa-file-pdf"></i> Paper</button>
+                    </a>
+                </li> -->
+                <!-- <li>
+                    <a href="https://youtu.be/XuzH1u78o1Y" target="_blank">
+                        <button class="btn"><i class="fab fa-youtube"></i> Video</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Khrylx/RFC" target="_blank">
+                        <button class="btn"><i class="fab fa-github"></i> Code</button>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="n-article">
+
+        <h2 id="abstract">
+            Abstract
+        </h2>
+        <p>
+            We propose embodied scene-aware human pose estimation where we estimate 3D poses based on a simulated agent's
+            proprioception and scene awareness, along with external third-person observations. Unlike prior methods that often
+            resort to multistage optimization, non-causal inference, and complex contact modeling to estimate human pose and human
+            scene interactions, our method is one stage, causal, and recovers global 3D human poses in a simulated environment.
+            Since 2D third-person observations are coupled with the camera pose, we propose to disentangle the camera pose and use a
+            multi-step projection gradient defined in the global coordinate frame as the movement cue for our embodied agent.
+            Leveraging a physics simulation and prescanned scenes (e.g., 3D mesh), we simulate our agent in everyday environments
+            (libraries, offices, bedrooms, etc.) and equip our agent with environmental sensors to intelligently navigate and
+            interact with scene geometries. Our method also relies only on 2D keypoints and can be trained on synthetic datasets
+            derived from popular human motion databases. To evaluate, we use the popular H36M and PROX datasets and, for the first
+            time, achieve a success rate of 96.7% on the challenging PROX dataset without ever using PROX motion sequences for
+            training.
+        </p>
+
+        <h2>
+            Demo Video
+        </h2>
+        <div class="video_wrapper shadow">
+            <iframe width="705" height="397" border-style=none src="https://www.youtube.com/embed/rOdW6ppxKw4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+
+        <table
+            style="width:100%;border:0px;border-spacing:5px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;padding-bottom:20px;">
+            <tbody>
+                <tr class="block_videos">
+                    <td>
+                        <video width=100% height=auto muted autoplay loop controls>
+                            <source src="videos/BasementSittingBooth_00142_01.mp4#t=0.001" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </td>
+                    <td>
+                        <video width=100% height=auto muted autoplay loop controls>
+                            <source src="videos/BasementSittingBooth_00142_01.mp4#t=0.001" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </td>
+                    <td>
+                        <video width=100% height=auto muted autoplay loop controls>
+                            <source src="videos/BasementSittingBooth_00142_01.mp4#t=0.001" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </td>
+                    <td>
+                        <video width=50% height=auto muted autoplay loop controls>
+                            <source src="videos/BasementSittingBooth_00142_01.mp4#t=0.001" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </td>
+        
+                </tr>
+                <tr class="block_videos">
+                    <td>
+                        <video width=100% height=auto muted autoplay loop playsinline>
+                            <source src="data/rfc_teaser3.mp4#t=0.001" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </td>
+                    <td>
+                        <video width=100% height=auto muted autoplay loop playsinline>
+                            <source src="data/rfc_teaser4.mp4#t=0.001" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </td>
+                </tr>
+        </table>
+
+      
+    </pre>
+
+    </div>
+</body>
+
+</html>
