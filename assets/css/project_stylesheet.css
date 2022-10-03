@@ -211,11 +211,11 @@ strong {
 }
 
 a:link {
-	color: #76B900;
+    color: rgb(180, 43, 54)
 }
 
 a:visited {
-	color: green;
+	color:rgb(180, 43, 54)
 }
 /*------------------------------------------------------------------*/
 /* title */
@@ -342,6 +342,8 @@ a:visited {
 }
 
 ul.authors {
+    color: rgb(180, 43, 54);
+        /* Blue background */
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
@@ -354,7 +356,8 @@ ul.authors li {
 }
 
 ul.authors sup {
-	color: rgb(126, 126, 126);
+	color: rgb(180, 43, 54);
+        /* Blue background */
 }
 
 ul.authors.affiliations {
@@ -362,7 +365,13 @@ ul.authors.affiliations {
 }
 
 ul.authors.affiliations li {
-	color: rgb(126, 126, 126);
+    color: rgb(180, 43, 54);
+        /* Blue background */
+}
+
+ul.authors.suffix li {
+    color: rgb(109, 109, 109);
+    /* Blue background */
 }
 
 ul.authors.venue li {
@@ -377,7 +386,7 @@ ul.authors.links li {
 
 /* Style buttons */
 .btn {
-	background-color: #76B900; /* Blue background */
+	background-color: rgb(180, 43, 54); /* Blue background */
 	border: none; /* Remove borders */
 	color: white; /* White text */
 	padding: 8px 12px; /* Some padding */
@@ -388,7 +397,8 @@ ul.authors.links li {
   
   /* Darker background on mouse-over */
 .btn:hover {
-	background-color: green;
+	background-color: rgb(180, 43, 54);
+        /* Blue background */
 }
 
 /* For BibTeX */
